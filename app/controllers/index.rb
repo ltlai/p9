@@ -2,7 +2,8 @@ get '/' do
   erb :index
 end
 
-get '/skills/:skill' do
+get '/skills/:skill' do |skill|
+  @skill = skill
   erb :skills
 end
 
